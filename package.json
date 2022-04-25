@@ -1,0 +1,67 @@
+{
+  "name": "drinkwater-reminder",
+  "displayName": "Drink Water",
+  "description": "Hey, you should drink water. It's good for you.",
+  "version": "0.1.0",
+  "publisher": "ankitaS",
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "bugs": {
+    "email": "anki5486@gmail.com"
+  },
+  "galleryBanner": {
+    "theme": "dark",
+    "color": "#3E0E0E"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "email": "anki5486@gmail.com",
+    "name": "Ankita Sharma",
+    "url": "https://github.com/ankitaS11"
+  },
+  "readme": "README.md",
+  "license": "MIT",
+  "keywords": [
+    "reminder",
+    "water",
+    "timer",
+    "productivity",
+    "note"
+  ],
+  "activationEvents": [
+    "onCommand:remindMe.remind"
+  ],
+  "main": "./out/src/remindMe",
+  "contributes": {
+    "commands": [
+      {
+        "command": "remindMe.remind",
+        "title": "DrinkWater Reminder"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^11.15.12",
+    "@types/vscode": "^1.66.0",
+    "mocha": "^6.2.3",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "node": "^17.7.2",
+    "vsce": "^2.7.0"
+  }
+}
